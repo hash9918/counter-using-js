@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" style="height: 90vh">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <h1 id="clock" class="clock">12:12:12 AM</h1>
+        </div>
+        <div
+          class="row d-flex flex-column justify-content-center align-items-center"
+        >
+          <div style="height: 15vh" class="col-6">
+            <div class="row d-flex align-content-around">
+              <div class="col-6" style="width: 100%">
+                <h1 class="text-center">Timer</h1>
+              </div>
+              <div
+                style="width: 100%"
+                class="col-10 d-flex flex-row mt-3 justify-content-between align-items-center"
+              >
+                <button class="button-10" role="button" id="start">
+                  START
+                </button>
+                <button class="button-10" role="button" id="pause">
+                  PAUSE
+                </button>
+                <button class="button-10" role="button" id="reset">
+                  RESET
+                </button>
+              </div>
+            </div>
+
+            <!-- <input type="text"> -->
+          </div>
+          <div
+            class="col-6 d-flex justify-content-between align-items-center"
+            id="styletimer"
+          >
+            <!-- <p id="days" class="gen-style">00</p> -->
+            <p id="hr" class="gen-style">00</p>
+            <p id="min" class="gen-style">00</p>
+            <p id="sec" class="gen-style">00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
